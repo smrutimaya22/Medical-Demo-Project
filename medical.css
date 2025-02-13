@@ -1,0 +1,726 @@
+/* Reset Styles */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* Top Bar */
+.top-bar {
+   
+    background-color: #f9f9f9;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.top-bar span {
+    margin-left: 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #0077cc;
+}
+
+.logo h1 span {
+    color: gray;
+}
+
+
+/* Navigation Menu */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* .nav ul .active a {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+} */
+
+.nav ul li a:hover {
+    color: #0077cc;
+}
+.div1{
+    background-repeat: no-repeat;
+    /* background-size:100% 200%; */
+    height: 300px;
+    width:850px;
+    text-align:left;
+    color:white;
+    background-image: url("DoctorImage.jpg");
+    /* min-height: 500px; */
+    display:grid;
+    
+}
+p,u{
+    color: white;
+}
+.div1:hover{
+    background-image: url("doctor2.jpg");
+    transition: all 1s ease-in-out;
+    display:grid;
+}
+.nav2{
+    background-color: blue;
+    color:white;
+}
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Container */
+.info-banner {
+    display: flex;
+    width:85%;
+    max-width:800px;
+    margin:auto;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: nowrap;  /* Ensures all boxes stay in one row */
+}
+
+/* Common Box Styling */
+.info-box {
+    flex: 1;  /* Ensures Equal Width */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.info-box:hover{
+    transform: scale(1.05);
+}
+
+/* Medical Treatment Box */
+.medical {
+    background: linear-gradient(to right, #0099cc, #33ccff);
+   
+}
+
+/* Opening Hours Box */
+.hours {
+    background: linear-gradient(to right, #00aaff, #0099ff);
+}
+
+/* Emergency Box */
+.emergency {
+    background: #002244;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icons */
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Emergency Text Styling */
+.emergency .text {
+    text-align: left;
+}
+
+/* Arrow Symbol */
+.info-box a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.info-box a span {
+    margin-left: 5px;
+}
+
+/* Ensure No Wrapping */
+@media (max-width: 600px) {
+    .info-banner {
+        flex-wrap: nowrap;  /* Prevents wrapping */
+        overflow-x: auto;   /* Allows horizontal scrolling if needed */
+    }
+}
+.content {
+    /* flex: 1;
+    max-width: 45%;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width:1000px;
+    margin:auto;
+    padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.content h2,p {
+    font-size:17px;
+    font-weight: bold;
+    margin-bottom:10px; 
+    color:#333;
+    text-align: center;
+    align-items: center;  
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+  
+}
+/* .content p {
+    font-size: 16px;
+    color: #666;
+    /* line-height: 1.5; */
+
+ 
+.read-more {
+    background: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition:background 0.3s;
+    margin:30px auto;
+    display: block;
+}
+.read-more:hover {
+    background: black;
+    color: white;
+    
+} 
+
+ .about-section{
+    margin: 1rem;
+    padding:2rem ;
+    text-align:left;
+ }
+ .about-image{
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   /* margin-top: 15px; */
+ }
+ @media(max-width:600px){
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content, .about-image{
+        max-width: 100%;
+    }
+ }
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9b4;
+    text-align: center;
+}
+
+/* Departments Section */
+.departments {
+    padding: 50px;
+    background-color:#f9f9f9;
+}
+
+.departments h2 {
+    font-size: 32px;
+    color: #222;
+}
+
+.departments p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Department Grid */
+.department-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* color: #333; */
+}
+
+.department {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.department:hover {
+    transform: scale(1.05);
+}
+
+.department img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.department h3 {
+    font-size: 20px;
+    color: #0077cc;
+}
+
+.department p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* View More Button */
+.view-more {
+    background: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition:background 0.3s;
+    margin:30px auto;
+    display: block;
+}
+
+.view-more:hover {
+    background: black;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .department-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .department-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Doctors Section */
+.doctors {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.doctors h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.doctors p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Doctor Cards */
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.doctor {
+    text-align: center;
+    position: relative;
+}
+.doctor:hover {
+    transform: scale(1.05);
+}
+
+.doctor img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.specialty {
+    font-size: 14px;
+    color: gray;
+}
+
+.doctor h3 {
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.arrow {
+    /* font-size: 24px;
+    color: #666;
+    cursor: pointer; */
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #0077cc;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.arrow:hover{
+    background-color: black;
+}
+
+/* Navigation Arrows */
+.nav-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-left, .nav-right {
+    font-size: 30px;
+    color: #0077cc;
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    /* line-height: 40px; */
+    align-items: center;
+    border: 2px solid #0077cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    /* font-weight: bold; */
+    /* padding: 10px; */
+    transition: 0.3s ease-in-out;
+}
+
+.nav-left:hover, .nav-right:hover {
+    color: #0077cc;
+    color: #fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.resources {
+    padding: 50px;
+}
+
+.resources h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resources p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.resource-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.resource-card:hover{
+    transform: scale(1.05);
+}
+
+.resource-card {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.resource-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.resource-card p {
+    font-size: 14px;
+    color: gray;
+}
+
+.view-more {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    /* text-align: center; */
+    margin:30px auto;
+    display: block;
+}
+
+.view-more:hover {
+    background: black;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 50px;
+}
+
+.insurance h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.insurance p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.insurance-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.insurance-card {
+    background: white;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.insurance-card img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.insurance-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+/* General Styles */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0057b3, #1e3c72); /* Blue gradient */
+    /* color: white;
+    text-align: center; */
+ 
+
+/* Testimonial Section */
+.testimonial {
+    margin: 0;
+    padding: 0;
+    /* max-width: 800px;
+    padding: 40px; */
+    text-align: center;
+    background: linear-gradient(to bottom, #0057b3, #1e3c72);
+    color:white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    font-family: Arial, sans-serif; 
+    
+    
+
+}
+
+/* Quotation Marks */
+ .quote-top, .quote-bottom {
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0.7;
+} 
+
+/* Quote Text */
+.quote-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+} 
+
+/* Author Name */
+ .author {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* flex-wrap: wrap; */
+
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+.emergency-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    padding: 8px;
+    display: inline-block;
+    background: white;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* .social-icons a:hover {
+   background: white;
+   color: wheat;
+} */
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid #333;
+}
